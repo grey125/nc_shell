@@ -24,7 +24,7 @@ void *recv_thread(void *arg) {
 
     // 如果读取失败或客户端关闭连接
     printf("\nConnection closed by client.\n");
-    exit(0);                     // 主动退出程序
+    _exit(0);                     // 主动退出程序
     return NULL;                 // 返回空指针（虽然不会执行到这）
 }
 
